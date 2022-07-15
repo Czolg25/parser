@@ -1,0 +1,50 @@
+{
+  "id": "b3af5707-e7a6-489e-970a-421303e04764",
+  "version": "2.0",
+  "name": "Single ",
+  "url": "https://mineserver.pl",
+  "tests": [{
+    "id": "f80ba0ee-9132-488e-8e82-993f9db09791",
+    "name": "click",
+    "commands": [{
+      "id": "3df79986-729f-47d9-845a-86b2ecadcd71",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57d4c7b4-88ef-4fa5-afc7-23d8188ae770",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1060x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba1d90fc-4ad0-4cca-9ab2-8da3e1cf809f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Serwery Minecraft",
+      "targets": [
+        ["linkText=Serwery Minecraft", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Serwery Minecraft')]", "xpath:link"],
+        ["xpath=//div[@id='panel']/font/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://serweryminecraft.pl']", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Serwery Minecraft')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7cbaa6cf-8e50-4689-86d5-69fb5e64ced0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f80ba0ee-9132-488e-8e82-993f9db09791"]
+  }],
+  "urls": ["https://mineserver.pl/"],
+  "plugins": []
+}
